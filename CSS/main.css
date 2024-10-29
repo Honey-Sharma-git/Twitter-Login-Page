@@ -1,0 +1,23 @@
+/* || CSS RESET */
+*,
+* ::after,
+* ::before {
+  box-sizing: border-box;
+  outline: 1px solid lime;
+  background-color: hsla(0, 100%, 50%, 0.05);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+
+/* || VARIABLES */
+:root {
+  --BTN-PADDING: 0.7rem;
+  --LINK-COLOR: rgb(0, 100, 201);
+}
+
+/* || GENERAL STYLES */
