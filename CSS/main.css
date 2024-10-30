@@ -5,7 +5,7 @@
 * ::before {
   box-sizing: border-box;
   outline: 1px solid lime;
-  background-color: hsla(0, 100%, 50%, 0.05);
+  /* background-color: hsla(0, 100%, 50%, 0.05); */
 }
 * {
   margin: 0;
@@ -22,11 +22,31 @@ img {
 }
 
 /* || GENERAL STYLES */
-body,
-button {
+body {
+  background-color: black;
+  display: grid;
+  place-items: center;
   color: white;
-  font-size: 1rem;
-  font-family: "Open Sans";
+}
+header {
+  justify-self: start;
+}
+main {
+  justify-self: center;
+}
+footer {
+  justify-self: end;
+}
+main {
+  display: grid;
+  justify-items: center;
+}
+.google-btn,
+.apple-btn,
+.forgot-password,
+button,
+input {
+  width: 100%;
 }
 :is(.close-icon, button) img {
   height: 25px;
@@ -39,6 +59,9 @@ button {
 button {
   padding: var(--BTN-PADDING);
   border-radius: 40px;
+  color: black;
+  font-size: 1rem;
+  font-family: "Open Sans";
 }
 input {
   padding: var(--BTN-PADDING);
