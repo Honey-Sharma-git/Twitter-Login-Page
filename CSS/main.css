@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /* || CSS RESET */
 *,
 * ::after,
@@ -21,3 +22,29 @@ img {
 }
 
 /* || GENERAL STYLES */
+body,
+button {
+  color: white;
+  font-size: 1rem;
+  font-family: "Open Sans";
+}
+:is(.close-icon, button) img {
+  height: 25px;
+  width: 25px;
+}
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+button {
+  padding: var(--BTN-PADDING);
+  border-radius: 40px;
+}
+input {
+  padding: var(--BTN-PADDING);
+  border-radius: 10px;
+}
+.signup a {
+  text-decoration: none;
+  color: var(--LINK-COLOR);
+}
