@@ -4,7 +4,7 @@
 * ::after,
 * ::before {
   box-sizing: border-box;
-  outline: 1px solid lime;
+  /* outline: 1px solid lime; */
   /* background-color: hsla(0, 100%, 50%, 0.05); */
 }
 * {
@@ -25,32 +25,50 @@ img {
 body {
   background-color: black;
   display: grid;
+  row-gap: 10px;
   place-items: center;
   color: white;
+  padding: 1rem;
 }
-header {
-  justify-self: start;
-}
-main {
-  justify-self: center;
-}
+main,
+header,
 footer {
-  justify-self: end;
+  justify-self: stretch;
+}
+header,
+footer {
+  justify-items: center;
+}
+header .close-icon{
+  justify-self: start;
 }
 main {
   display: grid;
   justify-items: center;
+  row-gap: 10px;
+  /* padding: 3rem; */
 }
 .google-btn,
 .apple-btn,
 .forgot-password,
 button,
-input {
+input,
+.form-container,
+form {
   width: 100%;
+  max-width: 300px;
+}
+button,
+input {
+  background-color: white;
+}
+.form-container form {
+  display: grid;
+  row-gap: 10px;
 }
 :is(.close-icon, button) img {
-  height: 25px;
-  width: 25px;
+  height: 22px;
+  width: 22px;
 }
 .logo img {
   height: 40px;
@@ -62,10 +80,15 @@ button {
   color: black;
   font-size: 1rem;
   font-family: "Open Sans";
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
 }
 input {
   padding: var(--BTN-PADDING);
   border-radius: 10px;
+  font-size: 1rem;
 }
 .signup a {
   text-decoration: none;
