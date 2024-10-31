@@ -4,7 +4,7 @@
 * ::after,
 * ::before {
   box-sizing: border-box;
-  /* outline: 1px solid lime; */
+  outline: 1px solid lime;
   /* background-color: hsla(0, 100%, 50%, 0.05); */
 }
 * {
@@ -118,7 +118,7 @@ button {
 }
 .form-container form label {
   position: absolute;
-  left: 10000px;
+  left: -10000px;
 }
 input {
   padding: 1rem;
