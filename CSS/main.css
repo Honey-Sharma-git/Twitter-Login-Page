@@ -4,7 +4,7 @@
 * ::after,
 * ::before {
   box-sizing: border-box;
-  outline: 1px solid lime;
+  /* outline: 1px solid lime; */
   /* background-color: hsla(0, 100%, 50%, 0.05); */
 }
 * {
@@ -86,6 +86,7 @@ input {
 .form-container form {
   display: grid;
   row-gap: 20px;
+  position: relative;
 }
 :is(.close-icon, button) img {
   height: 22px;
@@ -107,9 +108,17 @@ button {
   align-items: center;
   border: none;
   border: 1px solid white;
+  cursor: pointer;
+}
+button {
+  -webkit-tap-highlight-color: hsla(0, 0%, 50%, 0.3);
 }
 :is(.apple-btn, .form-container form, .forgot-password) button {
   font-weight: bold;
+}
+.form-container form label {
+  position: absolute;
+  left: 10000px;
 }
 input {
   padding: 1rem;
