@@ -4,7 +4,7 @@
 * ::after,
 * ::before {
   box-sizing: border-box;
-  /* outline: 1px solid lime; */
+  outline: 1px solid lime;
   /* background-color: hsla(0, 100%, 50%, 0.05); */
 }
 * {
@@ -134,4 +134,16 @@ input {
 .signup a {
   text-decoration: none;
   color: var(--LINK-COLOR);
+}
+.separator {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.block {
+  height: 1px;
+  background-color: gray;
+  width: 130px;
+  margin-inline: 10px;
 }
